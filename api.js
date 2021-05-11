@@ -100,7 +100,7 @@
                 })
                 .then(data => {
 
-                    //console.log(data);
+                    console.log(data);
 
                     this.ide.innerHTML= data.id;
                     this.nombre.innerHTML= data.name;
@@ -131,7 +131,7 @@
                 .then(resp => resp.json())
                 .then(data => {
 
-                    //console.log(data);
+                    console.log(data);
 
                     this.ide.innerHTML= data.id;
                     this.nombre.innerHTML= data.name;
@@ -139,6 +139,7 @@
                     this.especie.innerHTML= data.species;
                     this.tipo.innerHTML= data.type;
                     this.genero.innerHTML= data.gender;
+                    this.origen.innerHTML= data.origin.name;
                     this.imagen.innerHTML= `<img src="${data.image}"/>`;
 
                 })
@@ -167,7 +168,7 @@
                 .then(resp => resp.json())
                 .then(data => {
 
-                    //console.log(data);
+                    console.log(data);
 
 
                     this.ide.innerHTML= data.id;
@@ -176,6 +177,7 @@
                     this.especie.innerHTML= data.species;
                     this.tipo.innerHTML= data.type;
                     this.genero.innerHTML= data.gender;
+                    this.origen.innerHTML= data.origin.name;
                     this.imagen.innerHTML= `<img src="${data.image}"/>`;
                 })
             }
